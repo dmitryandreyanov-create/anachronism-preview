@@ -559,8 +559,8 @@ __d(function(t,e,s,i,r,o,n){r.exports={uri:"/anachronism-preview/assets/assets/r
 __d(function(t,s,i,e,n,r,a){n.exports={uri:"/anachronism-preview/assets/assets/rasputin/contacts/tyulen.da40f53ca11f9063f21fb7cd2e856048.jpg",width:1254,height:1254,toString(){return this.uri}}},497,[]);
 __d(function(t,s,i,a,e,r,n){e.exports={uri:"/anachronism-preview/assets/assets/rasputin/contacts/ashby.f59e945cc7f5a2b3f4740c1d612a186e.jpg",width:1254,height:1254,toString(){return this.uri}}},498,[]);
 __d(function(t,a,e,s,i,r,n){i.exports={uri:"/anachronism-preview/assets/assets/rasputin/contacts/methody.d79a6e6a83a27c3f9af878ac488e04ec.jpg",width:1254,height:1254,toString(){return this.uri}}},499,[]);
-__d(function(g,r,i,a,m,e,d){m.exports={uri:"/anachronism-preview/assets/assets/rasputin/icons/starcegram.e92df846596c227e230b16fa7afbed07.png",width:256,height:256,toString(){return this.uri}}},500,[]);
-__d(function(g,r,i,a,m,e,d){m.exports={uri:"/anachronism-preview/assets/assets/rasputin/icons/maps.4b89af3a337f6f7d10bcb986107f4126.png",width:256,height:256,toString(){return this.uri}}},501,[]);
+__d(function(g,r,i,a,m,e,d){m.exports={uri:"/anachronism-preview/assets/assets/rasputin/icons/starcegram.77e4315c6500839800192146355eab84.png",width:512,height:512,toString(){return this.uri}}},500,[]);
+__d(function(g,r,i,a,m,e,d){m.exports={uri:"/anachronism-preview/assets/assets/rasputin/icons/maps.0547291c3eb623ac5c33649603788be4.png",width:512,height:512,toString(){return this.uri}}},501,[]);
 __d(function(t,s,i,r,n,a,e){n.exports={uri:"/anachronism-preview/assets/assets/rasputin/contacts/rasputin.8be66c157f1710ca28f59bd868442751.jpg",width:1254,height:1254,toString(){return this.uri}}},502,[]);
 __d(function(t,e,r,s,a,i,n){a.exports={uri:"/anachronism-preview/assets/assets/maps/petrograd_mayak_1916.84770d53104ec87c9a6de311293c7054.jpg",width:1600,height:2085,toString(){return this.uri}}},503,[]);
 __r(3);
