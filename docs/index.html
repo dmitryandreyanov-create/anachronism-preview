@@ -25,7 +25,16 @@
     </style>
   <link rel="icon" href="/anachronism-preview/favicon.ico"/><script>
   if('serviceWorker' in navigator){window.addEventListener('load',function(){
-    navigator.serviceWorker.register('/anachronism-preview/sw.js',{scope:'/anachronism-preview/'}).catch(()=>{});
+    var refreshKey='anachronism-sw-refreshed-49186cacb124';
+    var reloadQueued=false;
+    navigator.serviceWorker.addEventListener('controllerchange',function(){
+      if(reloadQueued)return;
+      try{if(sessionStorage.getItem(refreshKey))return;sessionStorage.setItem(refreshKey,'1');}catch(e){}
+      reloadQueued=true;window.location.reload();
+    });
+    navigator.serviceWorker.register('/anachronism-preview/sw.js',{
+      scope:'/anachronism-preview/',updateViaCache:'none'
+    }).then(function(reg){return reg.update();}).catch(function(){});
   });}
 </script>
 <meta name="apple-mobile-web-app-capable" content="yes"/>
@@ -45,6 +54,6 @@
     </noscript>
     <!-- The root element for your Expo app. -->
     <div id="root"></div>
-  <script src="/anachronism-preview/_expo/static/js/web/index-03b6597812696f8f8466a43c9f459a4a.js" defer></script>
+  <script src="/anachronism-preview/_expo/static/js/web/index-7e93eba99f5e11b386a23dbf8b29191d.js" defer></script>
 </body>
 </html>
