@@ -23,7 +23,7 @@
         flex: 1;
       }
     </style>
-  <script>
+  <link rel="icon" href="/anachronism-preview/favicon.ico"/><script>
   if('serviceWorker' in navigator){window.addEventListener('load',function(){
     navigator.serviceWorker.register('/anachronism-preview/sw.js',{scope:'/anachronism-preview/'}).catch(()=>{});
   });}
@@ -32,6 +32,8 @@
 <meta name="mobile-web-app-capable" content="yes"/>
 <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent"/>
 <meta name="apple-mobile-web-app-title" content="ANACHRONISM"/>
+<link rel="apple-touch-icon" href="/anachronism-preview/apple-touch-icon.png"/>
+<link rel="icon" type="image/png" sizes="512x512" href="/anachronism-preview/icon-512.png"/>
 <meta name="theme-color" content="#263D56"/>
 <style>html,body{height:100%;margin:0;background:#263D56;}#root{height:100vh;height:100dvh;min-height:100vh;box-sizing:border-box;padding:0;overflow:hidden;background:#263D56;}</style>
 </head>
