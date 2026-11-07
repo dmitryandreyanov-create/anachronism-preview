@@ -1,5 +1,5 @@
-const CACHE="anachronism-vb193f4ef5875";
-const CORE=["/_expo/static/js/web/index-e1d65c85e69673a33dd41ab860c2b093.js","/assets/assets/maps/petrograd_mayak_1916.84770d53104ec87c9a6de311293c7054.jpg","/assets/assets/rasputin/gallery/petersburg/city_07.b5ab46b3aa7624e17e9e9258663e4149.jpg","/assets/node_modules/@expo/vector-icons/build/vendor/react-native-vector-icons/Fonts/Ionicons.b4eb097d35f44ed943676fd56f6bdc51.ttf","/assets/node_modules/@expo/vector-icons/build/vendor/react-native-vector-icons/Fonts/MaterialCommunityIcons.6e435534bd35da5fef04168860a9b8fa.ttf","/index.html"];
+const CACHE="anachronism-v402a7580c84b";
+const CORE=["/_expo/static/js/web/index-696cc9ed48e12e94342f4c042f2b187f.js","/assets/assets/maps/petrograd_mayak_1916.84770d53104ec87c9a6de311293c7054.jpg","/assets/assets/rasputin/gallery/petersburg/city_07.b5ab46b3aa7624e17e9e9258663e4149.jpg","/assets/node_modules/@expo/vector-icons/build/vendor/react-native-vector-icons/Fonts/Ionicons.b4eb097d35f44ed943676fd56f6bdc51.ttf","/assets/node_modules/@expo/vector-icons/build/vendor/react-native-vector-icons/Fonts/MaterialCommunityIcons.6e435534bd35da5fef04168860a9b8fa.ttf","/index.html"];
 self.addEventListener('install',event=>{
   event.waitUntil(caches.open(CACHE).then(c=>c.addAll(CORE)).then(()=>self.skipWaiting()));
 });
