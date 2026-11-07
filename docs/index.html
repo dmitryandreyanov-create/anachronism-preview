@@ -23,17 +23,17 @@
         flex: 1;
       }
     </style>
-  <link rel="icon" href="/anachronism-preview/favicon.ico"/><script>
+  <link rel="icon" href="/favicon.ico"/><script>
   if('serviceWorker' in navigator){window.addEventListener('load',function(){
-    var refreshKey='anachronism-sw-refreshed-7fa5befdd44e';
+    var refreshKey='anachronism-sw-refreshed-b193f4ef5875';
     var reloadQueued=false;
     navigator.serviceWorker.addEventListener('controllerchange',function(){
       if(reloadQueued)return;
       try{if(sessionStorage.getItem(refreshKey))return;sessionStorage.setItem(refreshKey,'1');}catch(e){}
       reloadQueued=true;window.location.reload();
     });
-    navigator.serviceWorker.register('/anachronism-preview/sw.js',{
-      scope:'/anachronism-preview/',updateViaCache:'none'
+    navigator.serviceWorker.register('/sw.js',{
+      scope:'/',updateViaCache:'none'
     }).then(function(reg){return reg.update();}).catch(function(){});
   });}
 </script>
@@ -41,8 +41,8 @@
 <meta name="mobile-web-app-capable" content="yes"/>
 <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent"/>
 <meta name="apple-mobile-web-app-title" content="ANACHRONISM"/>
-<link rel="apple-touch-icon" href="/anachronism-preview/apple-touch-icon.png"/>
-<link rel="icon" type="image/png" sizes="512x512" href="/anachronism-preview/icon-512.png"/>
+<link rel="apple-touch-icon" href="/apple-touch-icon.png"/>
+<link rel="icon" type="image/png" sizes="512x512" href="/icon-512.png"/>
 <meta name="theme-color" content="#263D56"/>
 <style>html,body{height:100%;margin:0;background:#263D56;}#root{height:100vh;height:100dvh;min-height:100vh;box-sizing:border-box;padding:0;overflow:hidden;background:#263D56;}</style>
 </head>
@@ -54,6 +54,6 @@
     </noscript>
     <!-- The root element for your Expo app. -->
     <div id="root"></div>
-  <script src="/anachronism-preview/_expo/static/js/web/index-081dc57924fee143947c865d13709b4f.js" defer></script>
+  <script src="/_expo/static/js/web/index-e1d65c85e69673a33dd41ab860c2b093.js" defer></script>
 </body>
 </html>
