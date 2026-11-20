@@ -1,10 +1,9 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
   <head>
     <meta charset="utf-8" />
-    <meta httpEquiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover"/>
-    <title>ANACHRONISM</title>
+    <title>ANACHRONISM — Чужие телефоны. Чужие тайны.</title>
     <!-- The `react-native-web` recommended style reset: https://necolas.github.io/react-native-web/docs/setup/#root-element -->
     <style id="expo-reset">
       /* These styles make the body full-height */
@@ -23,37 +22,49 @@
         flex: 1;
       }
     </style>
-  <link rel="icon" href="/favicon.ico"/><script>
-  if('serviceWorker' in navigator){window.addEventListener('load',function(){
-    var refreshKey='anachronism-sw-refreshed-ebcef1cf872b';
-    var reloadQueued=false;
-    navigator.serviceWorker.addEventListener('controllerchange',function(){
-      if(reloadQueued)return;
-      try{if(sessionStorage.getItem(refreshKey))return;sessionStorage.setItem(refreshKey,'1');}catch(e){}
-      reloadQueued=true;window.location.reload();
-    });
-    navigator.serviceWorker.register('/sw.js',{
-      scope:'/',updateViaCache:'none'
-    }).then(function(reg){return reg.update();}).catch(function(){});
-  });}
-</script>
+<meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'; style-src 'self' 'unsafe-inline'; img-src 'self' data: blob:; media-src 'self' data: blob:; font-src 'self' data:; connect-src 'self' https://us.i.posthog.com; frame-src https://tally.so; worker-src 'self'; manifest-src 'self'; object-src 'none'; base-uri 'self'; form-action 'none'"/>
+<meta name="referrer" content="strict-origin-when-cross-origin"/>
+<meta name="description" content="Одна ночь в телефоне Распутина или Клеопатры. Читай переписку, смотри фото и решай, чем закончится история."/>
+<link rel="canonical" href="https://anachronism.app/"/>
+<meta property="og:type" content="website"/>
+<meta property="og:site_name" content="ANACHRONISM"/>
+<meta property="og:locale" content="ru_RU"/>
+<meta property="og:url" content="https://anachronism.app/"/>
+<meta property="og:title" content="ANACHRONISM — Чужие телефоны. Чужие тайны."/>
+<meta property="og:description" content="Одна ночь в телефоне Распутина или Клеопатры. Читай переписку, смотри фото и решай, чем закончится история."/>
+<meta property="og:image" content="https://anachronism.app/og-1200x630.jpg"/>
+<meta property="og:image:secure_url" content="https://anachronism.app/og-1200x630.jpg"/>
+<meta property="og:image:type" content="image/jpeg"/>
+<meta property="og:image:width" content="1200"/>
+<meta property="og:image:height" content="630"/>
+<meta property="og:image:alt" content="ANACHRONISM: ночной Петроград и Александрийский маяк"/>
+<meta name="twitter:card" content="summary_large_image"/>
+<meta name="twitter:title" content="ANACHRONISM — Чужие телефоны. Чужие тайны."/>
+<meta name="twitter:description" content="Одна ночь в телефоне Распутина или Клеопатры. Читай переписку, смотри фото и решай, чем закончится история."/>
+<meta name="twitter:image" content="https://anachronism.app/og-1200x630.jpg"/>
 <meta name="apple-mobile-web-app-capable" content="yes"/>
 <meta name="mobile-web-app-capable" content="yes"/>
 <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent"/>
 <meta name="apple-mobile-web-app-title" content="ANACHRONISM"/>
-<link rel="apple-touch-icon" href="/apple-touch-icon.png"/>
-<link rel="icon" type="image/png" sizes="512x512" href="/icon-512.png"/>
 <meta name="theme-color" content="#263D56"/>
-<style>html,body{height:100%;margin:0;background:#263D56;}#root{height:100vh;height:100dvh;min-height:100vh;box-sizing:border-box;padding:0;overflow:hidden;background:#263D56;}</style>
+<meta name="anachronism-build" content="333ba902b07a"/>
+<link rel="preload" as="image" href="/assets/assets/rasputin/gallery/petersburg/city_02.69d18fe6613c86c010167b635197f77f.jpg"/>
+<link rel="manifest" href="/manifest.webmanifest"/>
+<link rel="apple-touch-icon" href="/apple-touch-icon.png"/>
+<link rel="icon" href="/favicon.ico" sizes="any"/>
+<link rel="icon" type="image/png" sizes="192x192" href="/icon-192.png"/>
+<link rel="icon" type="image/png" sizes="512x512" href="/icon-512.png"/>
+<style>html,body{height:100%;margin:0;background:#263D56;}#root{height:100vh;height:100dvh;min-height:100vh;box-sizing:border-box;padding:0;overflow:hidden;background:#263D56;}
+#boot{position:absolute;left:0;top:0;right:0;bottom:0;background:#0F0E12;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:14px;font-family:Georgia,'Times New Roman',serif;color:#F7EDE0;text-align:center}
+#boot b{font-size:30px;letter-spacing:.16em;font-weight:700}#boot i{font-style:normal;font-size:12px;letter-spacing:.22em;color:#D8B98D}</style>
+<script src="/sw-register.js?v=333ba902b07a" defer></script>
 </head>
 
   <body>
     <!-- Use static rendering with Expo Router to support running without JavaScript. -->
-    <noscript>
-      You need to enable JavaScript to run this app.
-    </noscript>
+    <noscript>Для игры нужен включённый JavaScript.</noscript>
     <!-- The root element for your Expo app. -->
-    <div id="root"></div>
-  <script src="/_expo/static/js/web/index-03b08303b423ab8b30098b461d12b1ae.js" defer></script>
+    <div id="root"><div id="boot" aria-hidden="true"><b>ANACHRONISM</b><i>ЧУЖИЕ ТЕЛЕФОНЫ. ЧУЖИЕ ТАЙНЫ.</i></div></div>
+  <script src="/_expo/static/js/web/index-6f88ab9ccde4846450fcc029dae9579b.js" defer></script>
 </body>
 </html>
